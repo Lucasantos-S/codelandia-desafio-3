@@ -60,7 +60,7 @@ input:focus {
   
   
 }
-.container {
+.bg-info {
   max-width: 1260px;
   margin: 0 auto;
   display: flex;
@@ -69,20 +69,20 @@ input:focus {
   justify-content: space-between;
   padding: 20px;
 }
-.bg-info{
+.info{
   max-width: 400px;
   flex: 1 1 400px;
 }
-.bg-info h1{
-  
+.info h1{
   font-family: 'Merriweather';
   font-size: 2em;
   font-style: normal;
   font-weight: normal;
   line-height: 47px;
   color: var(--title);
+  margin-top: 50px;
 }
-.bg-info p {
+.info p {
   font-family: 'Lato';
   font-size: 1.2em;
   font-style: normal;
@@ -91,7 +91,7 @@ input:focus {
   color: var(--text);
 }
 
-.bg-info button{
+.info button{
   font-family: 'Lato';
   font-size: 1.25em;
   font-style: normal;
@@ -110,8 +110,8 @@ input:focus {
   margin: 90px 32px;
 }
 
-/*---conteudo---*/
-.content {
+/*---CONTEUDO---*/
+.container {
   max-width: 1260px;
   display: grid;
   grid-template-columns: 1fr;
@@ -120,16 +120,16 @@ input:focus {
   margin: 0 auto;
   
 }
-.contend-1 {
+.contend {
   width: 375px;
   height: 423px;
   margin-top: 75px;
   background: #fff;
   display: grid;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  
- 
+  border-radius : 2px;
 }
+
 .info{
   padding: 24px 30px;
 }
@@ -157,18 +157,18 @@ input:focus {
 }
 
 @media (min-width: 720px) {
-  .content {
+  .container {
     grid-template-columns: 1fr 1fr;
   }
-  .contend-1 {
+  .contend {
     width: 340px;
   }
 }
 @media (min-width: 1090px) {
-  .content {
+  .container {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .contend-1 {
+  .contend {
     width: 340px;
   }
 }
@@ -186,11 +186,16 @@ input:focus {
 }
 .form h1  {
   margin: 80px 0 35px 0; 
+  font-family: 'Merriweather';
   font-size: 2.5rem ;
+  font-weight: normal;
+  line-height: 40px;
+  
 }
 .form input {
   flex-wrap: wrap;
   font-family: 'Lato';
+  font-size: 1.37em;
   line-height: 22px;
   width: 370px;
   height: 60px;
@@ -201,6 +206,7 @@ input:focus {
 }
 .form textarea {
   font-family: 'Lato';
+  font-size: 1.37em;
   line-height: 22px;
   width: 375px;
   height: 150px;
